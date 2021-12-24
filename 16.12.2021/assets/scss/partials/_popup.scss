@@ -1,0 +1,50 @@
+.popup {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #0000008a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+
+  img {
+    height: 600px;
+  }
+
+  .inner {
+    position: relative;
+    border: 8px solid #fff;
+
+    .close-icon {
+      position: absolute;
+      top: -18px;
+      right: -14px;
+      cursor: pointer;
+      background-color: black;
+      border-radius: 50%;
+
+      i {
+        color: white;
+        font-size: 25px;
+      }
+    }
+
+    .arrows {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      position: absolute;
+      width: 100%;
+      top: 45%;
+
+      i {
+        cursor: pointer;
+        color: white;
+        font-size: 25px;
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+#gallery {
+  left: 0;
+  position: absolute;
+  transition: all 1s;
+  height: 100vh;
+  display: none;
+  .holder{
+    gap: 100px;
+  }
+  .welcome-title {
+    margin-top: 50px;
+  }
+  .upload-icon {
+    font-size: 24px;
+    color: rgb(250, 234, 15);
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover {
+      color: rgb(250, 140, 15);
+    }
+  }
+  .upload-btn {
+    display: none;
+  }
+
+  .upload-image {
+    position: absolute;
+    top: 20%;
+    left: 48.5%;
+    margin-bottom: 80px;
+  }
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 120px;
+    row-gap: 100px;
+    justify-content: center;
+    align-items: center;
+    a {
+      overflow: hidden;
+      position: relative;
+      width: 200px;
+      height: 180px;
+      img {
+        transition: 0.8s;
+        position: relative;
+        width: 100%;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+h2 {
+  color: white;
+}
